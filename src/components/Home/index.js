@@ -45,7 +45,7 @@ const Home = () => {
           <h1 className="heading">IPL Dashboard</h1>
         </div>
         {isLoading ? (
-          <div testid="loader" className="loader-container">
+          <div data-testid="loader" className="loader-container">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
           </div>
         ) : (

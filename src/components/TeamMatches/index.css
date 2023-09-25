@@ -58,10 +58,13 @@
 }
 
 .recent-matches-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* flex-wrap: wrap; */
   margin-top: 24px;
-  /* width: 100%; */
+  width: 100%;
+  gap: 1.6rem 1.6rem;
 }
 @media screen and (max-width: 767px) {
   .recent-matches-list {

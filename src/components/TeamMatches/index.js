@@ -67,7 +67,7 @@ const TeamMatches = props => {
     }
 
     getMatchesData()
-  }, [])
+  }, [id])
 
   //   const {teamBannerUrl, latestMatchDetails, recentMatches} = matchesData
   /* console.log(teamBannerUrl)
@@ -77,7 +77,7 @@ const TeamMatches = props => {
   return (
     <>
       {isLoading ? (
-        <div testid="loader" className="loader-container">
+        <div data-testid="loader" className="loader-container">
           <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
         </div>
       ) : (
@@ -85,7 +85,7 @@ const TeamMatches = props => {
           <div className="banner-img-container">
             <img
               src={matchesData.teamBannerUrl}
-              alt="img"
+              alt="team banner"
               className="banner-img"
             />
           </div>
